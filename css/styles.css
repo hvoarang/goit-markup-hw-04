@@ -332,7 +332,7 @@ img {
 
 .clients__icon {
   fill: var(--icon-fill);
-  transition: fill 0.3 ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
 
 .clients__item:hover .clients__icon {
