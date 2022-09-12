@@ -133,8 +133,8 @@
     <path fill="inherit" d="M0.528 10.636h6.635v21.364h-6.635v-21.364z"></path>
     <path fill="inherit" d="M3.843 0c-2.121 0-3.843 1.721-3.843 3.843s1.721 3.879 3.843 3.879c2.121 0 3.843-1.757 3.843-3.879-0.001-2.121-1.723-3.843-3.843-3.843v0z"></path>
   </symbol>
-  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="PC">
-    <title>PC</title>
+  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="pc">
+    <title>pc</title>
     <path fill="#2196f3" d="M14.926 14.965h1.066v4.798h-1.066v-4.797z"></path>
     <path fill="#2196f3" d="M19.19 17.097h1.066v2.665h-1.066v-2.665z"></path>
     <path fill="#2196f3" d="M10.661 18.696h1.066v1.066h-1.066v-1.066z"></path>
