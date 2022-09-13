@@ -114,7 +114,7 @@ img {
 
 .menu__link {
   color: inherit;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .menu__link:hover,
@@ -131,13 +131,13 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--sub-txt-color);
-  transition: color 0.3s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .header__icon {
   margin-right: 10px;
   fill: var(--sub-txt-color);
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.25s ease-in-out;
 }
 
 .contacts__link:hover,
@@ -150,12 +150,13 @@ img {
 
 /* Hero */
 .background {
+  background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #c4c4c4;
-  box-shadow: rgba(47, 48, 58, 0.4);
   padding: 200px 0;
+  background-image: linear-gradient(47, 48, 58, 0.4), url(../images/hero.jpg);
 }
 
 .title {
@@ -204,6 +205,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .prof__text {
@@ -263,30 +265,35 @@ img {
   justify-content: center;
 }
 
-.social__item {
-  padding: 12px;
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-bottom: 30px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  border-radius: 50%;
 }
+
 
 .social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social__item:hover {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--primary-color);
 }
 
-.social__item:hover .social__icon {
+.social__link:hover,
+.social__link:hover .social__icon {
   fill: var(--background-cards-color);
 }
 
 .social__icon {
   fill: var(--icon-fill);
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.25s ease-in-out;
 }
 
 .team__name {
@@ -299,12 +306,12 @@ img {
 }
 
 .team__prof {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--sub-txt-color);
+  margin-bottom: 16px;
 }
 
 .clients__list {
@@ -323,7 +330,7 @@ img {
   cursor: pointer;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
-  transition: border 0.3s ease-in-out;
+  transition: border 0.25s ease-in-out;
 }
 
 .clients__item:hover {
@@ -332,7 +339,7 @@ img {
 
 .clients__icon {
   fill: var(--icon-fill);
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.25s ease-in-out;
 }
 
 .clients__item:hover .clients__icon {
@@ -351,8 +358,7 @@ img {
 
 .footer__container {
   display: flex;
-  align-items: center;
-  justify-content: start;
+  align-items: baseline;
 }
 
 .footer__address {
@@ -361,9 +367,7 @@ img {
   margin-right: 70px;
 }
 
-.footer__social {
-  max-width: 206px;
-}
+
 
 .home-logo {
   font-family: "Raleway";
@@ -382,7 +386,7 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 5;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .address {
@@ -408,10 +412,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 0.3s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
-.social__item-bg {
+.social__link-bg {
   background-color: #43444d;
 }
 
@@ -453,7 +457,7 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
-  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s ease-in-out;
+  transition: color 0.25s, background-color 0.3s, box-shadow 0.3s ease-in-out;
 }
 
 .btn__portfolio-link:hover,
@@ -486,19 +490,18 @@ img {
   color: var(--sub-txt-color);
 }
 
+
 .portfolio__cards-link {
+  display: block;
   color: inherit;
+  transition: box-shadow 0.25s ease-in-out;
 }
 
-.portfolio__items {
-  transition: box-shadow 0.3s ease-in-out;
+.portfolio__cards-link:hover,
+.portfolio__cards-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-
-.portfolio__items:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 
 .portfolio__content {
   border: 1px solid #eeeeee;
