@@ -156,7 +156,7 @@ img {
   background-position: center;
   background-color: #c4c4c4;
   padding: 200px 0;
-  background-image: linear-gradient(47, 48, 58, 0.4), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 }
 
 .title {
